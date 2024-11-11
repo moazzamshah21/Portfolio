@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+:root{
+  --Dark:#111112;
+  --Black: #000000;
+  --White:#fff;
+  --Light-Dark:#262627;
+}
+
+a{
+  text-decoration: none;
+}
