@@ -1,0 +1,54 @@
+.aboutcon2 {
+    width: 100vw;
+    height: 900vh;
+    position: relative;
+    z-index: 6000;
+    margin-top: -200px;
+
+
+    .about-section2 {
+        width: 100vw;
+        height: 100vh;
+        // background-color: #F3F4F1;
+        background: url("../../Assets/Images/Projectbg.png"), #F3F4F1;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: -webkit-sticky;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        overflow-x: none;
+
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-image: url("../../Assets/Images/Rectanglezz.png");
+            width: 100%;
+            height: 100%;
+            position: static;
+            background-size: contain;
+            background-position: top center;
+            background-attachment: scroll;
+
+
+
+            h1 {
+                color: #fff;
+                font-weight: 400;
+                font-family: "Geist Mono", monospace;
+                text-transform: uppercase;
+                font-size: 150px;
+
+                span {
+                    position: static;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

@@ -6,10 +6,11 @@
     align-items: center;
     padding: 25px;
     position: relative;
+    background-color: var(--Black);
 }
 
 .navItems {
-    background-color: #141414c6;
+    background-color: var(--light-opacity-dark);
     padding: 8px;
     border-radius: 50px;
     display: flex;
@@ -17,6 +18,8 @@
     position: relative;
     display: flex;
     /* Initially hidden */
+    z-index: 9999 !important;
+
 }
 
 .navItems.active {
@@ -27,6 +30,7 @@
 .navItem {
     color: var(--White);
     font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
     font-size: 18px;
     font-weight: 400;
     padding: 12px 25px;
@@ -46,7 +50,7 @@
 
 .navItems .navItem:nth-child(2).active~.nav_bg {
     border-radius: 50px;
-    left: 35%;
+    left: 34%;
 }
 
 /* Target the third child */
@@ -82,7 +86,7 @@
 .toggle-btn {
     position: fixed;
     top: 20px;
-    background-color: #141414c6;
+    background-color: var(--light-opacity-dark);
     padding: 15px 25px;
     border-radius: 50px;
     color: var(--White);
@@ -99,7 +103,7 @@
     }
 
     .navItems {
-        background-color: #141414c6;
+        background-color: var(--light-opacity-dark);
         padding: 15px 5px;
         width: 200px;
         border-radius: 20px;

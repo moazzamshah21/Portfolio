@@ -9,8 +9,9 @@
   --Black: #000000;
   --White:#fff;
   --Light-Dark:#262627;
+  --light-opacity-dark: #141414c6;
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
