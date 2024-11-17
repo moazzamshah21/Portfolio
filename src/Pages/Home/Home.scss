@@ -1,0 +1,72 @@
+.aboutcon2 {
+    width: 100vw;
+    height: 900vh;
+    position: relative;
+    z-index: 99;
+    margin-top: -200px;
+
+
+    .about-section2 {
+        width: 100vw;
+        height: 100vh;
+        // background-color: #F3F4F1;
+        background: var(--Light-Dark);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: -webkit-sticky;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        overflow-x: none;
+
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-image: url("../../Assets/Images/Banner.png");
+            width: 100%;
+            height: 100%;
+            position: static;
+            background-size: 130% 130%;
+            background-position: top center;
+            background-attachment: scroll;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                /* Adjust the opacity for the overlay */
+                z-index: 1;
+                /* Ensure overlay is on top */
+            }
+
+            h1 {
+                color: #fff;
+                font-weight: 400;
+                font-family: "Geist Mono", monospace;
+                text-transform: uppercase;
+                font-size: clamp(35px, 13vw, 300px);
+                z-index: 6;
+
+                span {
+                    position: static;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+// @media only screen and (max-width: 700px) {
+//     .aboutcon2 .about-section2 .container2 h1 {
+//         font-size: 35px !important;
+//     }
+// }
