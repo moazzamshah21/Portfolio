@@ -1,6 +1,14 @@
 import React from 'react';
 import './About.scss';
-import ProfilePic from '../../Assets/Images/Profile.png'
+import ProfilePic from '../../Assets/Images/Profile.png';
+import { FaReact } from "react-icons/fa";
+import { TbBrandReactNative } from "react-icons/tb";
+import ScrollWriteM from "../Scroll/Scroll"
+import MattricsLogo from "../../Assets/Images/image.png";
+import Gsap from "../../Assets/Images/Gsap.png";
+import { FaWordpress } from "react-icons/fa";
+
+
 
 function About() {
   return (
@@ -22,16 +30,53 @@ function About() {
             </p>
           <div className='Experience-sec p-4 d-flex flex-column gap-3'>
               <h3>Experience</h3>
-              <div className='Exp-1 p-4'>
-                <div className='Title-Time d-flex justify-content-between'>
-                  <h6>MATTRICS PVT LTD</h6>
-                  <h6>3/Aug/24 - Present</h6>
+              <div className='Exp-1 p-0 d-flex flex-lg-row flex-column'>
+                <div className='Company-Logo col-lg-3 p-0'>
+                    <img src={MattricsLogo} className='m-logo'/>
                 </div>
-                <div className='Designation'>
-                  <h6>Web Developer</h6>
+                <div className='col-lg-4 p-4 col-12 Title-Time d-flex flex-column justify-content-between'>
+                  <h6><a href='https://www.linkedin.com/company/mattrics-pvt-ltd/posts/?feedView=all'>MATTRICS PVT LTD</a></h6>
+                  <h6 className='m-Designation'>Web Developer</h6>
+                </div>
+                <div className='d-flex pt-lg-4 p-lg-0 p-4 justify-content-lg-end justify-content-start col-lg-4 col-12'>
+                <h6>3/Aug/24 - Present</h6>
                 </div>
               </div>
             </div>
+
+          <div className='Skill-Sec p-4 d-flex flex-column gap-3'>
+            <h3>Skills</h3>
+            <div className='Skills d-flex flex-column flex-lg-row p-2 gap-3'>
+                <div className='Skill col-sm col-lg p-3 d-flex flex-column align-items-center justify-contents-center gap-3'>
+                  <FaReact className='icn'/>
+                  <h4>React.js</h4>           
+                </div>
+                <div className='Skill col-sm-12 col-lg p-3 d-flex flex-column align-items-center justify-contents-center gap-3'>
+                  <TbBrandReactNative className='icn'/>
+
+                  <h4>React Native</h4>           
+                </div>
+                <div className='Skill col-sm-12 col-lg p-3 d-flex flex-column align-items-center justify-contents-center gap-3'>
+                  <img src={Gsap} className='gsap-icn'/>
+                  <h4>GSAP</h4>           
+                </div>
+            </div>
+            <div className='Skills d-flex flex-column flex-lg-row p-2 gap-3'>
+                <div className='Skill col-sm col-lg p-3 d-flex flex-column align-items-center justify-contents-center gap-3'>
+                  <FaWordpress className='icn'/>
+                  <h4>Wordpress</h4>           
+                </div>
+                {/* <div className='Skill col-sm-12 col-lg p-3 d-flex flex-column align-items-center justify-contents-center gap-3'>
+                  <TbBrandReactNative className='icn'/>
+
+                  <h4>React Native</h4>           
+                </div>
+                <div className='Skill col-sm-12 col-lg p-3 d-flex flex-column align-items-center justify-contents-center gap-3'>
+                  <img src={Gsap} className='gsap-icn'/>
+                  <h4>GSAP</h4>           
+                </div> */}
+            </div>
+          </div>
         </div>
       </div>
     </div>

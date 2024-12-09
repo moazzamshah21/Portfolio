@@ -4,19 +4,44 @@
 
 
 .about {
-    background-color: black;
     color: white; // Optional: To make the text readable on a black background
-    min-height: 100vh; // Ensures the background covers the full viewport height
+    min-height: 160vh; // Ensures the background covers the full viewport height
     padding: 20px 20px;
+    margin-top: -50px;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     // border: 1px solid #fff;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #2c2f38 0%, #3c434e 13%, #4b505a 25%, #5d6269 38%, #6e7277 50%, #7f8589 62%, #91989b 75%, #a4a9ab 87%, #b7b9ba 100%);
+    background-size: 400% 400%;
+    position: relative;
+    animation: animate 7.5s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @keyframes animate {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
+    }
 
     .About-Sec {
         width: 700px;
         // border: 1px solid #fff;
         border-radius: 20px;
+        background-color: #14141456;
+        border-radius: 10px;
 
 
         .img-div {
@@ -60,16 +85,65 @@
 
         .Experience-sec {
             .Exp-1 {
-                background-color: var(--light-opacity-dark);
+                background-color: #14141456;
                 border-radius: 10px;
+
+                .Company-Logo {
+                    .m-logo {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
 
                 .Title-Time {
                     font-family: "Geist Mono", monospace;
+
+                    a {
+                        color: var(--White);
+                    }
                 }
 
-                .Designation {
+                .m-Designation {
                     font-family: "Geist Mono", monospace;
-                    color: #ffffff90;
+                    color: #DD5431;
+                }
+            }
+        }
+
+        .Skill-Sec {
+            .Skills {
+                .Skill {
+                    background-color: #14141456;
+                    border-radius: 10px;
+
+                    .icn {
+                        font-size: 40px;
+                        color: var(--light-blue);
+                        animation: Rotation-center 10s linear 0s infinite normal none;
+
+                        @keyframes Rotation-center {
+                            0% {
+                                transform: rotate(0);
+                            }
+
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+
+                    .gsap-icn {
+                        width: 40px;
+                        animation: Rotation-center 10s linear 0s infinite normal none;
+
+
+                    }
+
+                    h4 {
+                        font-family: "Geist Mono", monospace;
+                        font-size: 15px;
+                    }
                 }
             }
         }
